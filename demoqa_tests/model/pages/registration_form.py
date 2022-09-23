@@ -53,7 +53,7 @@ def get_subject_list(values: Tuple[Subject]):
     subjects = ''
 
     for subject in values:
-        subjects = subjects + subject.value + ', '
+        subjects = subjects + str(subject.value) + ', '
 
     subjects = subjects.rstrip(', ')
 
@@ -67,7 +67,7 @@ def add_hobbies(values: Tuple[Hobby]):
         # browser.all('[id^=hobbies]').by(have.value(hobby.value)).first.element(
         #     '..'
         # ).click()
-        hobby_xpath = "//label[contains(.,'" + hobby.value + "')]"
+        hobby_xpath = "//label[contains(.,'" + str(hobby.value) + "')]"
         browser.element(by.xpath(hobby_xpath)).click()
 
 
@@ -75,7 +75,7 @@ def get_hobby_list(values: Tuple[Subject]):
     hobbies = ''
 
     for hobby in values:
-        hobbies = hobbies + hobby.value + ', '
+        hobbies = hobbies + str(hobby.value) + ', '
 
     hobbies = hobbies.rstrip(', ')
 

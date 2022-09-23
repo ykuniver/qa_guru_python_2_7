@@ -4,21 +4,21 @@ from typing import Tuple
 
 
 class Subject(Enum):
-    History = 'History'
-    Maths = 'Maths'
-    Physics = 'Pysics'
+    History: str = 'History'
+    Maths: str = 'Maths'
+    Physics: str = 'Pysics'
 
 
 class Hobby(Enum):
-    Sports = 'Sports'
-    Reading = 'Reading'
-    Music = 'Music'
+    Sports: str = 'Sports'
+    Reading: str = 'Reading'
+    Music: str = 'Music'
 
 
 class Gender(Enum):
-    Male = 'Male'
-    Female = 'Female'
-    Other = 'Other'
+    Male: str = 'Male'
+    Female: str = 'Female'
+    Other: str = 'Other'
 
 
 @dataclass
